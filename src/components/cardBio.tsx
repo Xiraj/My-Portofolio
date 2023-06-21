@@ -1,12 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
 
-interface ItemProps {
-  icon: string
-  value: string
-  label: string
-}
-
 const Item = ({icon = "", value="value", label="label"}) => {
   return (
     <div className='inline-flex text-sm'>
@@ -19,7 +13,7 @@ const Item = ({icon = "", value="value", label="label"}) => {
 
 const cardBio = () => {
   return (
-    <div className='inline-flex gap-[28px] justify-center items-center rounded-lg border-zinc-100 w-[312px] h-[134px]'>
+    <div className='inline-flex gap-[28px] justify-center items-center rounded-lg border border-zinc-100 w-[312px] h-[134px]'>
       <Image alt='my-photo' width={80} height={80} src="/images/photo.png" />
       <div className='flex flex-col gap-2'>
         <Item icon='/images/project.png' value='11' label='Project Selesai'/>
